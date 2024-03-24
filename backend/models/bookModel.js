@@ -14,6 +14,15 @@ const bookSchema = mongoose.Schema(
       type: Number,
       required: true,
     },
+    creationTime: {
+      type: Date,
+      default: Date.now(),
+    },
+
+    updationTime: {
+      type: Date,
+      default: Date.now(),
+    },
   },
   {
     timeStamps: true,
